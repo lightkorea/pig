@@ -1,0 +1,41 @@
+/* 전반적인 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* 중앙 정렬된 컨테이너 */
+.container {
+    text-align: center;
+}
+
+/* 화려한 텍스트 스타일 */
+.fancy-text {
+    font-size: 80px;
+    font-weight: bold;
+    color: #ff1493; /* 핫 핑크 */
+    background: linear-gradient(to right, #ff1493, #ff6347, #ffff00, #32cd32);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 4s infinite alternate;
+}
+
+/* 텍스트 색상 애니메이션 */
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
